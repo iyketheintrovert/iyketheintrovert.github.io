@@ -102,11 +102,11 @@ a{
 }
 #about-me p span a{
     text-decoration: none;
-}
+/* }
 .down-two{
     height:1%;
     width: 1%;
-}
+} */
 #my-work{
     text-align: center;
     margin-top: 10%;
@@ -122,71 +122,3 @@ a{
 .top, .middle, .bottom{
     display: inline-flex;
 }
-.section-three{
-    margin-top: 3%;
-    height: 100%;
-/* }
-label{
-    text-align: start;
-} */
-/* .form-input{
-    height: 32px;
-    width: 500px;
-    border-radius: 4px;
-    line-height: 1.4;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    text-align: start;
-    stroke-width: 1px;
-    stroke-opacity: 1;
-    text-decoration: solid;
-    text-shadow: none;
-    outline: none;
-}
-.input-area{
-    width: 500px;
-    height: 250px;
-    border-radius: 4px;
-    line-height: 1.4;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    text-align: start;
-    stroke-width: 1px;
-    stroke-opacity: 1;
-    text-decoration: solid;
-    text-shadow: none;
-    outline: none;
-}
-#pre{
-    margin-left: -34%;
-    font-weight: 500;
-}
-#pre1{
-    margin-left: -29.5%;
-    font-weight: 500;
-}
-#pre2{
-    margin-left: -32%;
-    font-weight: 500;
-}
-.name{
-    margin-bottom: 2%;
-}
-.email{
-    margin-bottom: 2%;
-}
-::placeholder{
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-}
-button{
-    height: 40px;
-    width:100px;
-    margin-left: -31.5%;
-    border-radius: 4px;
-    line-height: 40px;
-    background-color: #002BFF;
-    color: #fff;
-    font-weight: bold;
-    border: 0;
-} */
