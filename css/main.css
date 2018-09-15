@@ -168,13 +168,9 @@ a:active, a:focus, a:hover {
     opacity: 0.5;
     display: none;
 }
-.nine{
-    height: 220px;
-    width: 280px;
-}
-/*.middle, .bottom{
+middle{
     display: inline-flex;
-} */
+}
 
 @media (max-width: 768px) {
     .example-site-footer .desktop {
