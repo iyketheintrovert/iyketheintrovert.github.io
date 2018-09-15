@@ -22,7 +22,6 @@ body{
 .mail{
     height: 4%;
     width: 4%;
-    text-decoration: #fff;
 }
 .header a{
     color: #fff;
@@ -38,26 +37,29 @@ nav {
     display: inline;
     box-sizing: border-box;
 }
-/*.about, .work, .cv, .contact {
+.about, .work, .cv, .contact {
     padding-right: 5%;
     font-size: medium;
+}
+
+.social{
+    width: 25%;
+    /* height: 70px; */
+}
+.fab{
+   height: 6%;
+   width: 6%;
 }
 a{
     border: none;
 }
 a:active, a:focus, a:hover {
     outline: 0;
-.social{
-    width: 20%;
 }
-.fab{
+/* .fas{
     font-size: 20px;
     text-decoration: #fff;
-}
-.fas{
-    font-size: 20px;
-    text-decoration: #fff;
-}
+} */
 .social a{
     padding-left: 5%;
 }
@@ -66,7 +68,7 @@ a:active, a:focus, a:hover {
     margin-right: auto;
     padding-bottom: 0;
     padding-top: 0;
-    width: 80%;
+    width: 50%;
     flex: 1 1 0%;
 }
 .preserve-whitespace{
@@ -76,29 +78,59 @@ a:active, a:focus, a:hover {
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-color: none;
-    padding-left: 140px;
+    padding-left: 100px;
+}
+.hamburger{
+    margin-right: 5%;
+    position: relative;
+    width: 24px;
+}
+.hamburger i {
+    display: block;
+    height: 2px;
+    margin-bottom: 4px;
+}
+.hamburger-click-area {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    padding: 30px 5%;
+    position: absolute;
+    right: 0;
+    -webkit-tap-highlight-color: transparent;
+    top: 50%;
+}
+.hamburger i:last-child {
+    margin-bottom: 0;
+}
+.hero{
+    width:100%;
+    background-size: cover;
 }
 .body-text h1 {
     color: #fff;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 70px;
-    margin-bottom:30px;
     margin-top: -35%;
-    text-align: center;
+    margin-bottom:30px;
     text-transform: none;
-    white-space: pre-wrap;
-    width: 100%;
-    word-wrap: break-word;
+    font-style: normal;
     display: inline-block;
+    width: 100%;
+    font-size: 36px;
+    word-wrap: break-word;
+    line-height: 70px;
+    font-weight: bold;
     position: absolute;
+    padding-left: 10%;
 }
 #about-me{
-    text-align: center;
+    padding-left: 10%;
     height: 100%;
 }
-#about-me p{
+/*#about-me p{
     font-weight: 501;
     font-size: 18px;
     line-height: 1.6;
@@ -129,40 +161,20 @@ a:active, a:focus, a:hover {
 .top, .middle, .bottom{
     display: inline-flex;
 } */
-.responsive-nav {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
-.hamburger-click-area {
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: none;
-    padding: 30px 5%;
-    position: absolute;
-    right: 0;
-    -webkit-tap-highlight-color: transparent;
-    top: 50%; }
-  
-  .hamburger {
-    position: relative;
-    width: 24px; }
-    .hamburger i {
-      display: block;
-      height: 2px;
-      margin-bottom: 4px; }
-      .hamburger i:last-child {
-        margin-bottom: 0; }
+
 @media (max-width: 768px) {
     .example-site-footer .desktop {
       display: none; }
     .example-site-footer .mobile {
       text-transform: capitalize; }
-}
+      .social{
+          display: none;
+      }
+      .preserve-whitespace{
+        padding: 0;
+        margin: 0;
+        }
+    }
 @media (max-width: 540px) {
     .masthead-button + .masthead-button-spacer {
       display: block;
@@ -171,18 +183,25 @@ a:active, a:focus, a:hover {
         margin-left: 0; }
 }
 @media (max-width: 768px) {
-    .nav-social li {
+    .nav-social {
       padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 8px;
       padding-right: 0px; }
 }
 @media (max-width: 540px) {
-    .nav-social li {
+    .nav-social {
       padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 7px;
       padding-right: 0px; }
+    .preserve-whitespace{
+        padding: 0;
+        margin: 0;
+        }
+    .social{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     nav {
@@ -192,15 +211,11 @@ a:active, a:focus, a:hover {
     .site-header {
       padding-left: 5%;
       padding-right: 5%; }
-    .logo-wrap {
-      max-width: 100%;
-      padding: 0;
-      width: 100%; }
-    .logo {
-      max-width: 100%;
-      padding: 0 39px 0 0; }
+
       .hamburger-click-area {
         display: block; }
       .hamburger i {
         background-color: #ffffff; }
+
+    
 }
