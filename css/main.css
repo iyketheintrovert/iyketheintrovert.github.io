@@ -78,6 +78,159 @@ a:active, a:focus, a:hover {
     text-decoration-color: none;
     padding-left: 100px;
 }
+
+#nav {
+    position: fixed;
+    /* left: 0%; */
+    z-index: 1000;
+    height: 7%;
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+    /* background: black; */
+}
+.hamburger-menu {
+    position: relative;
+    float: right;
+    margin-right: 50px;
+    margin-top: -3px;
+    cursor: pointer; }
+  
+  #bar1, #bar2, #bar3 {
+    height: 1px;
+    background-color: black;
+    background-color: #bdbdbd; }
+  
+  #bar1 {
+    width: 47px;
+    background-color: blac;
+    margin-top: 6px;
+    transition: 0.4s; }
+  
+  #bar2 {
+    width: 33px;
+    transition: 0.4s; }
+  
+  #bar3 {
+    width: 21px;
+    transition: 0.4s; }
+  
+  #bar2, #bar3 {
+    margin-top: 8px; }
+  
+  .change #bar1 {
+    background-color: black;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  
+  .change #bar2 {
+    opacity: 0;
+    background-color: black; }
+  
+  .change #bar3 {
+    background-color: black;
+    width: 47px;
+    -webkit-transform: rotate(80deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+  
+/* header{
+	width:100%; 
+    background:#ffffff;
+    background-size: cover;
+	height:auto; 
+    line-height:auto;
+    width: 100%;
+	border-bottom:1px solid #dddddd;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;} */
+
+
+/* Add a black background color to the top navigation */
+/* .topnav {
+    display: none;
+    background-color: #333;
+    overflow: hidden;
+} */
+
+/* Style the links inside the navigation bar */
+/* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} */
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+/* Add an active class to highlight the current page */
+/* .active {
+    background-color: #4CAF50;
+    color: white;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+/* .topnav .icon {
+    display: none;
+} */
+
+
+
+
+
 .hamburger{
     margin-right: 5%;
     position: relative;
@@ -147,7 +300,6 @@ a:active, a:focus, a:hover {
     width: 33.33%;
     margin-left: 10%;
   }
-  
   .row{
       display:flex;
   }
@@ -169,11 +321,9 @@ a:active, a:focus, a:hover {
     transition: .5s ease;
     background-color: #002BFF;
   }
-  
   .container:hover .overlay {
     opacity: 0.85;
   }
-  
   .text {
     color: white;
     font-size: 24px;
@@ -185,35 +335,6 @@ a:active, a:focus, a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-/* #my-work{
-   padding-left: 10%;
-    margin-top: 10%;
-    height: 100%;
-}
-#my-work h3{
-    margin-bottom: 3%;
-}
-.one{
-    height:270px;
-    width: 340px;
-}
-#my-work img {
-    height: 220px;
-    width: 280px;
-    background-size: cover;
-}
-.top{
-    display: inline-flex;
-}
-.color{
-    background-color: #002BFF;
-    opacity: 0.5;
-    display: none;
-}
-.middle{
-    display: inline-flex;
-} */
-
 @media (max-width: 768px) {
     .example-site-footer .desktop {
       display: none; }
@@ -227,7 +348,7 @@ a:active, a:focus, a:hover {
         margin: 0;
         }
     }
-@media (max-width: 540px) {
+@media (max-width: 375px) {
     .masthead-button + .masthead-button-spacer {
       display: block;
       height: 17px; }
@@ -236,14 +357,16 @@ a:active, a:focus, a:hover {
         /* .top{
             display: block;
         } */
-        .column {
+        /* .column {
             width: 100%;
-          }
-}
-@media (max-width: 320px) {
-    .body-text h1 {
-        font-size: 14px;
-    }
+          } */
+          /* .topnav{
+              display: block;
+          } */
+          #nav {
+        display: block;
+        }
+          
 }
 @media (max-width: 768px) {
     .nav-social {
@@ -258,7 +381,24 @@ a:active, a:focus, a:hover {
         font-size: medium;
         }
 }
-@media (max-width: 540px) {
+@media (max-width: 375px) {
+    /* .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    .topnav.responsive {
+        position: relative;
+    }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
     .nav-social {
       padding-top: 0px;
       padding-bottom: 0px;
@@ -311,5 +451,16 @@ a:active, a:focus, a:hover {
       .hamburger i {
        background-color: #ffffff;
     }
-    
+    .body-text h1 {
+        font-size: 24px;
+        /* margin-top: -35%; */
+    }
+    #nav {
+        display: block;
+    }
+}
+@media (max-width: 375px) {
+    .body-text h1 {
+        font-size: 14px;
+    }
 }
