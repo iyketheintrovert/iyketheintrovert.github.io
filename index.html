@@ -11,6 +11,7 @@
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body class="main">
     <div>
@@ -28,7 +29,7 @@
                     </span>
                     <span class="contact">
                         <a href="mailto:stephencharles02@gmail.com">
-                        <img src="img/envelope.svg" class="mail"></a>
+                        Contact</a>
                     </span>
                 </nav>
                 <div class="logo-wrap editable">
@@ -41,7 +42,11 @@
                     <a href="https://dribbble.com/IykeTheIntrovert" target="_blank"><img src="img/dribbble.svg" class="fab"></a>
                     <a href="https://instagram.com/iyketheintrovert" target="_blank"><img src="img/instagram.svg" class="fab"></a>
                 </div>
-            
+                <div id="overlay">
+                    <div class="col-sm-12 margin-top-200"><a href="#about-me">About</a></div>
+                    <div class="col-sm-12"><a href="#my-work">Work</a></div>
+                    <div class="col-sm-12"><a href="mailto:stephencharles02@gmail.com">Contact</a></div>
+                  </div>
                 <section id="nav">
                     <div class="hamburger-menu" onclick="onMenuClick(this)">
                       <div id="bar1"></div>
@@ -50,38 +55,8 @@
                     </div>
                 </section>
 
-<!-- 
-            
-            <ul>
-                            <a href="#about-me"><li>About</li></a>
-                            <a href="#my-work"><li>Work</li></a>
-                            <a href="https://drive.google.com/file/d/1ssGsJYyXWVP04Xge_0UbNHjddFWgXooe/view?usp=sharing"><li>CV</li></a>
-                            <a href="mailto:stephencharles02@gmail.com"><li>Mail</li></a>
-                        </ul> -->
                     </div>
                 </div>
-
-<!-- The overlay -->
-                <div id="myNav" class="overlay">
-
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                
-                    <!-- Overlay content -->
-                    <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                    </div>
-                
-                </div>
-                
-                <!-- Use any element to open/show the overlay navigation menu -->
-                <span onclick="openNav()">open</span>
-
-
-
 
 
             </div>
